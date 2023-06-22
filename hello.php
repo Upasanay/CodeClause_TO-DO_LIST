@@ -3,6 +3,7 @@
 $insert = false;
 $update = false;
 $delete = false;
+
 // Connect to the Database 
 $servername = "localhost";
 $username = "root";
@@ -114,6 +115,7 @@ else{
     </div>
   </div>
 
+<!-- NAVBAR -->
   <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
     <a class="navbar-brand" href="#"><img src="j.png" height="28px" alt=""></a>
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
@@ -126,12 +128,7 @@ else{
         <li class="nav-item active">
           <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
         </li>
-        <li class="nav-item">
-          <a class="nav-link" href="#">About</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="#">Contact Us</a>
-        </li>
+        
 
       </ul>
       <form class="form-inline my-2 my-lg-0">
@@ -171,6 +168,8 @@ else{
   </div>";
   }
   ?>
+
+  <!-- ADD A TASK FORM -->
   <div class="container my-4">
     <h2>Add a Task to iList</h2>
     <form action="hello.php" method="POST">
@@ -187,9 +186,8 @@ else{
     </form>
   </div>
 
+  <!-- Table of task added -->
   <div class="container my-4">
-
-
     <table class="table" id="myTable">
       <thead>
         <tr>
@@ -220,6 +218,7 @@ else{
     </table>
   </div>
   <hr>
+  
   <!-- Optional JavaScript -->
   <!-- jQuery first, then Popper.js, then Bootstrap JS -->
   <script src="https://code.jquery.com/jquery-3.7.0.js" integrity="sha256-JlqSTELeR4TLqP0OG9dxM7yDPqX1ox/HfgiSLBj8+kM=" crossorigin="anonymous"></script>
